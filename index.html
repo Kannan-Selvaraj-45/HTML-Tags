@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      section {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Tags</h1>
+    </header>
+
+    
+    <div>
+        <h1>HTML</h1>
+
+        <!--Listing Elements-->
+        <ul>
+          <li><p>HTML stands for Hyper Text Markup Language</p></li>
+    
+          <li><p>HTML is the standard markup language for Web pages</p></li>
+    
+          <li><p>HTML elements are the building blocks of HTML pages</p></li>
+    
+          <li><p>HTML elements are represented by <> tags</p></li>
+        </ul>
+    </div>
+
+      <!--Anchor Tag-->
+      <h1>Anchor Tag</h1>
+
+      <a
+        style="padding-left: 10px"
+        href="https://www.w3schools.com/html/html_intro.asp"
+        target="_blank"
+        >Learn HTML</a
+      >
+
+      <!--Marquee Tag-->
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="12"
+        scrolldelay="10"
+        loop="infinite"
+        width="100%"
+        height="50"
+      >
+        This is a customizable scrolling marquee text!
+      </marquee>
+
+      <!--Heading Tags-->
+    <section>
+      <h2>Headings</h2>
+      <h1>This is an H1 Heading</h1>
+      <h2>This is an H2 Heading</h2>
+      <h3>This is an H3 Heading</h3>
+      <h4>This is an H4 Heading</h4>
+      <h5>This is an H5 Heading</h5>
+      <h6>This is an H6 Heading</h6>
+    </section>
+
+    <!--Formatting Tags-->
+    <section>
+      <h2>Text Formatting</h2>
+      <p>
+        This is a <strong>strong</strong> text, and this is an
+        <em>emphasized</em> text.
+      </p>
+      <p>This text is <b>bold</b>, and this is <i>italic</i>.</p>
+      <p>
+        This text is <u>underlined</u>, and this is <small>small text</small>.
+      </p>
+      <p>This text is <mark>Marked</mark> and this is <del>deleted.</del></p>
+      <p>Chemical formula: H<sub>2</sub>O</p>
+      <p>Mathematical notation: E = mc<sup>2</sup></p>
+      <p>Line break example: Line 1<br />Line 2</p>
+    </section>
+
+    <!--Lists-->
+    <section>
+      <h2>Lists</h2>
+      <ul>
+        <li>Unordered List Item 1</li>
+        <li>Unordered List Item 2</li>
+      </ul>
+      <ol>
+        <li>Ordered List Item 1</li>
+        <li>Ordered List Item 2</li>
+      </ol>
+      <dl>
+        <dt>Term 1</dt>
+        <dd>Definition for Term 1.</dd>
+        <dt>Term 2</dt>
+        <dd>Definition for Term 2.</dd>
+      </dl>
+    </section>
+
+    <!--Links-->
+    <section>
+      <h2>Links and Images</h2>
+      <p>
+        Visit <a href="https://www.example.com" target="_blank">Example.com</a>
+      </p>
+
+      <map name="map1">
+        <area
+          shape="rect"
+          coords="34,44,270,350"
+          href="https://www.example.com"
+          alt="Example"
+          target="_blank"
+        />
+      </map>
+      <img
+        src="./images/32be68a26df411eb88e30242ac110005.jpg"
+        width="200px"
+        height="200px"
+        alt="Image with Map"
+        usemap="#map1"
+      />
+    </section>
+
+    <!--Tables-->
+    <section>
+      <h2>Tables</h2>
+      <table
+        border="1"
+        width="100%"
+        style="border-collapse: collapse; text-align: center"
+      >
+        <caption>
+          Student Table
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+        
+                <th>Points</th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Swanson</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Joe</td>
+                <td>Yellow</td>
+                <td rowspan="2">$250</td>
+              </tr>
+              <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+              </tr>
+        
+              <tr>
+                <td>Poland</td>
+                <td>Brown</td>
+                <td>$230</td>
+              </tr>
+       
+      </table>
+    </section>
+
+
+    <section>
+      <h2>Semantic Elements</h2>
+        <article>
+          <h2>Annual Company Picnic</h2>
+          <p>The annual company picnic will be held on <time datetime="2024-07-20">July 20, 2024</time> at Riverside Park.</p>
+           </article>
+      <aside>
+        <h4>Related Links</h4>
+        <p>Links to related articles can be placed here.</p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>Multimedia</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4" />
+        
+      </video>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />  
+      </audio>
+      
+
+      <iframe width="440" height="255" src="https://www.youtube.com/embed/VuVEqovwCIA?si=c3rfd_ne_VS8B9CO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+   
+    <footer>
+      <p>&copy;  HTML Tags</p>
+    </footer>
+  </body>
+</html>
